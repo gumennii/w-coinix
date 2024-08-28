@@ -912,6 +912,20 @@ video {
   }
 }
 
+@media (min-width: 768px) {
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:items-center {
+    align-items: center;
+  }
+}
+
 @media (min-width: 976px) {
   .lg\:px-8 {
     padding-left: 2rem;
