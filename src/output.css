@@ -554,6 +554,10 @@ video {
   --tw-contain-style:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -587,8 +591,16 @@ video {
   height: 8rem;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .min-h-\[calc\(100vh-128px\)\] {
   min-height: calc(100vh - 128px);
+}
+
+.w-full {
+  width: 100%;
 }
 
 .min-w-0 {
@@ -623,6 +635,11 @@ video {
 .bg-darkBlue {
   --tw-bg-opacity: 1;
   background-color: rgb(1 20 36 / var(--tw-bg-opacity));
+}
+
+.bg-blue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(122 185 237 / var(--tw-bg-opacity));
 }
 
 .px-12 {
@@ -792,6 +809,11 @@ video {
   .sm\:py-7 {
     padding-top: 1.75rem;
     padding-bottom: 1.75rem;
+  }
+
+  .sm\:py-36 {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
   }
 
   .sm\:text-7xl {
