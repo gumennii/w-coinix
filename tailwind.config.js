@@ -1,29 +1,24 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+import { fontFamily } from "tailwindcss/defaultTheme";
+
+const config = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    screens: {
-      // sm: '480px',
-      // md: '768px',
-      // lg: '976px',
-      // xl: '1440px',
+    container: {
+      center: true,
+      padding: "1.5rem",
     },
     colors: {
+      blue: '#7ab9ed',
+      white: '#ffffff',
       darkBlue: '#011424',
     },
-    fontFamily: {
-      // sans: ['Graphik', 'sans-serif'],
-      // serif: ['Merriweather', 'serif'],
-    },
     extend: {
-      spacing: {
-        // '128': '32rem',
-        // '144': '36rem',
-      },
-      borderRadius: {
-        // '4xl': '2rem',
+      fontFamily: {
+        sans: ["var(--font-sans)", ...fontFamily.sans],
       }
-    }
+    },
   },
   plugins: [],
 }
+
+export default config;
