@@ -31,6 +31,13 @@ jobs:
         run: |
           npm run build
           echo "::set-output name=build_dir::./dist"
+      
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: github-pages
+          path: ./dist
+
   deploy:
     needs: build
 
