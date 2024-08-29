@@ -37,7 +37,6 @@ jobs:
 
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Checkout the repository
@@ -45,6 +44,4 @@ jobs:
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4.0.5
-        with:
-          build_dir: ${{ needs.build.outputs.build_dir }}
     
