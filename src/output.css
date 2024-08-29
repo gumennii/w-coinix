@@ -850,6 +850,11 @@ video {
     padding-bottom: 9rem;
   }
 
+  .sm\:py-11 {
+    padding-top: 2.75rem;
+    padding-bottom: 2.75rem;
+  }
+
   .sm\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
