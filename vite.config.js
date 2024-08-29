@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
 export default defineConfig({
-  base: 'w-coinix',
+  base: '',
   root: 'src',
   build: {
     outDir: '../dist',
