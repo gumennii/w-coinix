@@ -595,6 +595,10 @@ video {
   height: 100vh;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
 .min-h-\[calc\(100vh-128px\)\] {
   min-height: calc(100vh - 128px);
 }
@@ -705,6 +709,11 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -751,6 +760,10 @@ video {
   line-height: 2rem;
 }
 
+.leading-normal {
+  line-height: 1.5;
+}
+
 .tracking-tight {
   letter-spacing: -0.025em;
 }
@@ -784,8 +797,16 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:mt-12 {
+    margin-top: 3rem;
+  }
+
   .sm\:block {
     display: block;
+  }
+
+  .sm\:h-32 {
+    height: 8rem;
   }
 
   .sm\:truncate {
@@ -844,6 +865,21 @@ video {
     line-height: 1;
   }
 
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .sm\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .sm\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
   .sm\:leading-loose {
     line-height: 2;
   }
@@ -854,6 +890,22 @@ video {
 
   .sm\:tracking-tight {
     letter-spacing: -0.025em;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:leading-normal {
+    line-height: 1.5;
   }
 }
 
