@@ -571,12 +571,24 @@ video {
   margin-top: 1.5rem;
 }
 
+.mt-12 {
+  margin-top: 3rem;
+}
+
 .flex {
   display: flex;
 }
 
 .hidden {
   display: none;
+}
+
+.h-32 {
+  height: 8rem;
+}
+
+.min-h-\[calc\(100vh-128px\)\] {
+  min-height: calc(100vh - 128px);
 }
 
 .min-w-0 {
@@ -656,6 +668,11 @@ video {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .font-bold {
@@ -740,6 +757,14 @@ video {
   .sm\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .sm\:leading-loose {
+    line-height: 2;
+  }
+
+  .sm\:leading-normal {
+    line-height: 1.5;
   }
 
   .sm\:tracking-tight {
