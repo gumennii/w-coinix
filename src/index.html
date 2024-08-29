@@ -13,10 +13,10 @@
       Hello world!
     </h1>
     
-    <section class="container px-6 lg:px-8 pt-8">
-      <h2 class="text-3xl font-bold tracking-tight text-gray-900">Contacts</h2>
-      <div class="flex gap-8 mt-10">
-        <div class="w-1/4 flex gap-x-4">
+    <section class="container lg:px-8 pt-10" id="contacts">
+      <!-- <h2 class="text-2xl font-bold tracking-tight text-gray-900 mb-8">Contacts</h2> -->
+      <div class="flex flex-col sm:flex-row gap-8">
+        <div class="sm:w-1/4 flex gap-x-4">
           <div class="flex-none">
             <span class="sr-only">Address</span>
             <svg class="h-7 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -30,7 +30,7 @@
             <p>United Arab Emirates</p>
           </div>
         </div>
-        <div class="w-1/4 flex gap-x-4">
+        <div class="sm:w-1/4 flex gap-x-4">
           <div class="flex-none">
             <span class="sr-only">Email</span>
             <svg class="h-7 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -45,16 +45,16 @@
       </div>
     </section>
     <footer class="py-10" aria-labelledby="footer-heading">
-      <div class="container px-6 lg:px-8">
-        <div class="flex gap-4 justify-between">
-          <p class="text-sm leading-5 text-white/50">
+      <div class="container lg:px-8">
+        <div class="flex flex-col sm:flex-row gap-4 justify-between">
+          <p class="text-sm leading-5 text-white/50 order-2 sm:order-1">
             © 2024 Coinix is a registered trademark of Unity Labs FZE. All Rights Reserved.
           </p>
             <a
-              href="/privacy-policy"
+              href="./privacy-policy.html"
               target="_blank"
               rel="reopener"
-              class="text-white hover:text-blue transition-all duration-200 text-sm">
+              class="text-white hover:text-blue transition-all duration-200 text-sm order-1 sm:order-2">
               Privacy Policy
             </a>
         </div>
