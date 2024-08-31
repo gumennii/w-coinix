@@ -11,7 +11,14 @@
     <meta name="author" content="Coinix" />
     <link href="output.css" rel="stylesheet">
   </head>
-  <body class="bg-darkBlue scroll-smooth">
+  <body
+    class="scroll-smooth"
+  >
+    <div class="fixed left-0 top-0 w-full h-full -z-[1]">
+      <video class="block w-full h-full object-cover" autoplay="" muted="" loop="" playsinline="">
+        <source src="https://bsqcapital.com/wp-content/uploads/2024/04/bg-video.mp4" type="video/mp4">
+      </video>
+    </div>
     <header class="h-20 sm:h-32 absolute w-full">
       <div class="flex items-center justify-between container lg:px-8 p-5 sm:py-12">
         <div class="min-w-0">
@@ -176,37 +183,39 @@
         </div>
       </div>
     </section>
-    <section class="container lg:px-8 pt-20" id="contact">
-      <div class="flex flex-col sm:flex-row gap-8">
-        <div class="sm:w-80 flex gap-x-4">
-          <div class="flex-none">
-            <span class="sr-only">Address</span>
-            <svg class="h-7 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" />
-            </svg>
+    <section class="pt-20 bg-darkBlue" id="contact">
+      <div class="container lg:px-8">
+        <div class="flex flex-col sm:flex-row gap-8">
+          <div class="sm:w-80 flex gap-x-4">
+            <div class="flex-none">
+              <span class="sr-only">Address</span>
+              <svg class="h-7 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" />
+              </svg>
+            </div>
+            <div class="leading-7">
+              <p class="mb-2 font-semibold">Address</p>
+              <p>Building A1, Dubai Digital Park, </p>
+              <p>Dubai Silicon Oasis, Dubai,</p>
+              <p>United Arab Emirates</p>
+            </div>
           </div>
-          <div class="leading-7">
-            <p class="mb-2 font-semibold">Address</p>
-            <p>Building A1, Dubai Digital Park, </p>
-            <p>Dubai Silicon Oasis, Dubai,</p>
-            <p>United Arab Emirates</p>
-          </div>
-        </div>
-        <div class="sm:w-80 flex gap-x-4">
-          <div class="flex-none">
-            <span class="sr-only">Email</span>
-            <svg class="h-7 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
-            </svg>
-          </div>
-          <div>
-            <p class="mb-2 font-semibold">Email</p>
-            <a class="text-white hover:text-blue transition-all duration-200" href="mailto:contact@coinix.co">contact@coinix.co</a>
+          <div class="sm:w-80 flex gap-x-4">
+            <div class="flex-none">
+              <span class="sr-only">Email</span>
+              <svg class="h-7 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+              </svg>
+            </div>
+            <div>
+              <p class="mb-2 font-semibold">Email</p>
+              <a class="text-white hover:text-blue transition-all duration-200" href="mailto:contact@coinix.co">contact@coinix.co</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <footer class="pt-10 pb-16" aria-labelledby="footer-heading">
+    <footer class="pt-10 pb-16 bg-darkBlue" aria-labelledby="footer-heading">
       <div class="container lg:px-8">
         <div class="flex flex-col sm:flex-row gap-4 justify-between">
           <p class="text-sm leading-5 text-white/50 order-2 sm:order-1">
