@@ -773,17 +773,17 @@ video {
 
 .text-3xl {
   font-size: 1.875rem;
-  line-height: 2.25rem;
+  line-height: 2.75rem;
 }
 
 .text-4xl {
   font-size: 2.25rem;
-  line-height: 2.5rem;
+  line-height: 3rem;
 }
 
 .text-base {
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -800,10 +800,6 @@ video {
 
 .uppercase {
   text-transform: uppercase;
-}
-
-.capitalize {
-  text-transform: capitalize;
 }
 
 .leading-normal {
@@ -958,7 +954,7 @@ video {
 
   .sm\:text-4xl {
     font-size: 2.25rem;
-    line-height: 2.5rem;
+    line-height: 3rem;
   }
 
   .sm\:text-5xl {
@@ -968,7 +964,7 @@ video {
 
   .sm\:text-lg {
     font-size: 1.125rem;
-    line-height: 1.75rem;
+    line-height: 2rem;
   }
 
   .sm\:leading-normal {
@@ -1008,7 +1004,7 @@ video {
 
   .md\:text-xl {
     font-size: 1.25rem;
-    line-height: 1.75rem;
+    line-height: 2rem;
   }
 
   .md\:leading-normal {
