@@ -806,22 +806,6 @@ video {
   text-transform: capitalize;
 }
 
-.leading-10 {
-  line-height: 2.5rem;
-}
-
-.leading-6 {
-  line-height: 1.5rem;
-}
-
-.leading-7 {
-  line-height: 1.75rem;
-}
-
-.leading-8 {
-  line-height: 2rem;
-}
-
 .leading-normal {
   line-height: 1.5;
 }
@@ -987,10 +971,6 @@ video {
     line-height: 1.75rem;
   }
 
-  .sm\:leading-\[62px\] {
-    line-height: 62px;
-  }
-
   .sm\:leading-normal {
     line-height: 1.5;
   }
@@ -1033,6 +1013,10 @@ video {
 
   .md\:leading-normal {
     line-height: 1.5;
+  }
+
+  .md\:leading-snug {
+    line-height: 1.375;
   }
 }
 
