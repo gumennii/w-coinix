@@ -14,16 +14,8 @@
   <body
     class="scroll-smooth"
   >
-    <div class="fixed left-0 top-0 w-full h-full -z-[1]">
-      <video
-        class="block w-full h-full object-cover"
-        poster="bg-video-poster.png"
-        autoplay="" muted="" loop="" playsinline=""
-      >
-        <source src="bg-video.mp4" type="video/mp4">
-      </video>
-    </div>
-    <header class="bg-darkBlue h-20 sm:h-32 fixed w-full">
+    <div id="animatedBg" class="fixed left-0 top-0 w-full h-full -z-[1]"></div>
+    <header class="h-20 lg:h-32">
       <div class="flex items-center justify-between container lg:px-8 p-5 sm:py-12">
         <div class="min-w-0">
           <a href="/"
@@ -38,7 +30,7 @@
       </div>
     </header>
     <main id="main">
-      <section class="flex justify-start items-center h-screen py-24 sm:py-36">
+      <section class="flex justify-start items-center h-[calc(100vh-80px)] lg:h-[calc(100vh-128px)] py-16 sm:py-24">
         <div class="container lg:px-8">
           <div class="mx-auto lg:mx-0">
             <h1 class="text-4xl font-normal tracking-tight text-white sm:text-5xl md:text-7xl leading-normal sm:leading-normal md:leading-normal">
@@ -53,7 +45,7 @@
       </section>
     </main>
 
-    <section class="bg-[#061e33]" id="about-us">
+    <section class="bg-darkBlue" id="about-us">
       <div class="container sm:min-h-screen lg:px-8 py-16 sm:py-10 flex items-center">
         <div class="">
           <h2 class="text-white text-3xl sm:text-4xl font-semibold">About Us</h2>
@@ -190,31 +182,15 @@
     <section class="pt-20 bg-darkBlue" id="contact">
       <div class="container lg:px-8">
         <div class="flex flex-col sm:flex-row gap-8">
-          <div class="sm:w-80 flex gap-x-4">
-            <div class="flex-none">
-              <span class="sr-only">Address</span>
-              <svg class="h-7 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" />
-              </svg>
-            </div>
-            <div class="leading-7">
+          <div class="sm:w-80 leading-7">
               <p class="mb-2 font-semibold">Address</p>
               <p>Building A1, Dubai Digital Park, </p>
               <p>Dubai Silicon Oasis, Dubai,</p>
               <p>United Arab Emirates</p>
-            </div>
           </div>
-          <div class="sm:w-80 flex gap-x-4">
-            <div class="flex-none">
-              <span class="sr-only">Email</span>
-              <svg class="h-7 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
-              </svg>
-            </div>
-            <div>
-              <p class="mb-2 font-semibold">Email</p>
-              <a class="text-white hover:text-blue transition-all duration-200" href="mailto:contact@coinix.co">contact@coinix.co</a>
-            </div>
+          <div class="sm:w-80">
+            <p class="mb-2 font-semibold">Email</p>
+            <a class="text-white hover:text-blue transition-all duration-200" href="mailto:contact@coinix.co">contact@coinix.co</a>
           </div>
         </div>
       </div>
@@ -233,6 +209,24 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
+    <script>
+      VANTA.WAVES({
+        el: "#animatedBg",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: '#011424',
+        shininess: 1.00,
+        waveHeight: 15.50,
+        zoom: 0.76
+      });
+    </script>
     <script type="module" src="main.js"></script>
   </body>
 </html>
