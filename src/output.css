@@ -629,10 +629,6 @@ video {
   margin-top: 2.25rem;
 }
 
-.block {
-  display: block;
-}
-
 .flex {
   display: flex;
 }
@@ -654,16 +650,12 @@ video {
   height: 1.5rem;
 }
 
-.h-full {
-  height: 100%;
-}
-
-.h-screen {
-  height: 100vh;
-}
-
 .h-\[calc\(100vh-80px\)\] {
   height: calc(100vh - 80px);
+}
+
+.h-full {
+  height: 100%;
 }
 
 .w-6 {
@@ -744,11 +736,6 @@ video {
   scroll-behavior: smooth;
 }
 
-.bg-\[\#061e33\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(6 30 51 / var(--tw-bg-opacity));
-}
-
 .bg-darkBlue {
   --tw-bg-opacity: 1;
   background-color: rgb(1 20 36 / var(--tw-bg-opacity));
@@ -759,11 +746,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .p-5 {
   padding: 1.25rem;
 }
@@ -771,16 +753,6 @@ video {
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
-}
-
-.py-24 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
 }
 
 .pb-16 {
@@ -797,14 +769,6 @@ video {
 
 .pt-20 {
   padding-top: 5rem;
-}
-
-.pt-24 {
-  padding-top: 6rem;
-}
-
-.pt-16 {
-  padding-top: 4rem;
 }
 
 .text-3xl {
@@ -974,10 +938,6 @@ video {
     display: block;
   }
 
-  .sm\:h-32 {
-    height: 8rem;
-  }
-
   .sm\:min-h-screen {
     min-height: 100vh;
   }
@@ -1010,36 +970,9 @@ video {
     padding-bottom: 3rem;
   }
 
-  .sm\:py-36 {
-    padding-top: 9rem;
-    padding-bottom: 9rem;
-  }
-
-  .sm\:py-16 {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-
-  .sm\:py-20 {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-
   .sm\:py-24 {
     padding-top: 6rem;
     padding-bottom: 6rem;
-  }
-
-  .sm\:pt-36 {
-    padding-top: 9rem;
-  }
-
-  .sm\:pt-24 {
-    padding-top: 6rem;
-  }
-
-  .sm\:pt-20 {
-    padding-top: 5rem;
   }
 
   .sm\:pt-14 {
@@ -1100,6 +1033,11 @@ video {
   .md\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   .md\:leading-normal {
