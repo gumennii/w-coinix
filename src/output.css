@@ -1021,6 +1021,11 @@ video {
     line-height: 1;
   }
 
+  .sm\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
   .sm\:leading-\[62px\] {
     line-height: 62px;
   }
