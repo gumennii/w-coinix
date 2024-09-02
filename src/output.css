@@ -802,6 +802,10 @@ video {
   text-transform: uppercase;
 }
 
+.capitalize {
+  text-transform: capitalize;
+}
+
 .leading-10 {
   line-height: 2.5rem;
 }
