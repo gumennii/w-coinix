@@ -17,6 +17,7 @@ const config = {
       blue: '#7ab9ed',
       white: '#ffffff',
       darkBlue: '#011424',
+      semiDarkBlue: '#06243D',
     },
     fontSize: {
       base: ['1rem', '1.75rem'],
